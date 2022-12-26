@@ -1,0 +1,11 @@
+users can signup/login to the website. They can post online complaints in the website.
+
+
+
+user table-
+id field(primary key,int,not null)
+usernamefield(varchar,notnull),
+password field(varchar,not null)
+complaints(varchar)
+
+
