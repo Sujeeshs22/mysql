@@ -4,23 +4,13 @@ Agents can login to the website. They can see the complaints and assign them to 
 
 
 user table-
-id field(primary key,int,not null)
-usernamefield(varchar,notnull),
-password field(varchar,not null)
-complaints(varchar)
+create table userlogin(id int notnull primarykey,username varchar(24),password varchar(20) not null,compalints varchar(50))
 
+employee table-
+create table emoplyee(emp_id int primarykey,employee_name varchar(20) not null,password varchar(20) not null,complaint_status varchar(40) ENUM ('COMPLETED','inprogress',stuck))
 
-employees table-
-emp_id(int primarykey),
-emp_name(varchar),
-password(varchar),
-complaints_status(varchar)
-
-agents table-
-id(primary key,int)
-agentName(varchar)
-password(varchcar)
-complaints_status(varchar)
+agent table-
+create table agents(id int notnull primarykey,agent_name varchar(40),password varchar(35),permisson varchar(20),compaliant_status varchar(25))
 
 
 

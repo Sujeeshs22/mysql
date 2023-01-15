@@ -3,9 +3,5 @@ users can signup/login to the website. They can post online complaints in the we
 
 
 user table-
-id field(primary key,int,not null)
-usernamefield(varchar,notnull),
-password field(varchar,not null)
-complaints(varchar)
-
+create table userlogin(id int not null primary key,username varchar(20),password varchar(23),complaints varchar(40))
 
